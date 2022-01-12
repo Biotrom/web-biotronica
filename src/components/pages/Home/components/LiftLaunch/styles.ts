@@ -7,12 +7,18 @@ import theme from '../../../../../styles/theme'
 export const Container = styled.div`
   width: 100%;
   height: 808px;
+
   display: flex;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
 
   background: ${theme.colors.white};
+
+  @media only screen and (max-width: 1024px) {
+    height: 100%;
+    flex-direction: column;
+  }
 `
 
 export const Content = styled.div`
@@ -23,6 +29,14 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+    padding: 12px;
+  }
 `
 
 export const Column = styled.div`
@@ -43,6 +57,12 @@ export const Title = styled.h2`
   line-height: 64px;
 
   color: ${theme.colors.gray_blue_800};
+
+  @media only screen and (max-width: 1024px) {
+    margin-top: 12px;
+    font-size: 38px;
+    line-height: 38px;
+  }
 `
 
 export const Subtitle = styled.p`
@@ -58,6 +78,10 @@ export const Subtitle = styled.p`
   line-height: 28px;
 
   color: ${theme.colors.gray_blue_400};
+
+  @media only screen and (max-width: 1024px) {
+    margin-top: 12px;
+  }
 `
 
 export const Row = styled.div`

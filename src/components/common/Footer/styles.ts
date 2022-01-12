@@ -7,10 +7,15 @@ import theme from '../../../styles/theme'
 export const Container = styled.header`
   width: 100%;
   height: 45.5rem;
+  
   display: flex;
   flex-direction: column;
 
-  background-color: #fff;
+  background-color: ${theme.colors.white};
+
+  @media only screen and (max-width: 1024px) {
+    height: 100%;
+  }
 `
 
 export const Content = styled.div`
@@ -23,6 +28,11 @@ export const Content = styled.div`
   background-color: ${theme.colors.orange};
 
   margin-top: 267px;
+
+  @media only screen and (max-width: 1024px) {
+    margin-top: 0px;
+    height: 100%;
+  }
 `
 
 export const ContentGrid = styled.div`
@@ -37,6 +47,12 @@ export const ContentGrid = styled.div`
   justify-content: center;
 
   background-color: ${theme.colors.black};
+
+  @media only screen and (max-width: 1024px) {
+    height: 100%;
+    margin-bottom: 0rem;
+    padding: 12px;
+  }
 `
 
 export const Grid = styled.div`
@@ -49,6 +65,10 @@ export const Grid = styled.div`
 
   div:first-child {
     width: 18.5rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
   }
 `
 
@@ -113,4 +133,8 @@ export const LastText = styled.div`
   text-align: center;
 
   color: #E6E6E6;
+
+  @media only screen and (max-width: 1024px) {
+    height: 2rem;
+  }
 `

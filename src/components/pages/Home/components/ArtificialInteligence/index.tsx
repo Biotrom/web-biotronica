@@ -21,6 +21,7 @@ import {
   Content,
   IA,
   IAOpacity,
+  ImageDiv,
   Row,
   Subtitle,
   Title
@@ -41,35 +42,35 @@ const ArtificialInteligence: React.FC = () => {
           </IAOpacity>
         </ColumnIAOpacity>
         <Column>
-        <Title>
-            A mais alta tecnologia <br />
-            combinada para te fazer <br />
+          <Title>
+            A mais alta tecnologia
+            combinada para te fazer
             performar ainda mais.
           </Title>
           <Subtitle>
             Algorítmos de Machine Learning,
             que reconhecem padrões
-            de movimentos, atrelados a <br />
+            de movimentos, atrelados a
             sensores de IoT, que se
             comunicam via Bluetooth Low Energy (BLE).
           </Subtitle>
           <Row>
             <Card>
               <CardTitle>
-                Compre na PRÉ VENDA e <br />
+                Compre na PRÉ VENDA e
                 ganhe descontos
               </CardTitle>
               <CardSubtitle>
-                Atletas de alto nível testaram e <br />
+                Atletas de alto nível testaram e
                 aprovaram o LIFT.
               </CardSubtitle>
             </Card>
-            <div style={{ marginRight: 24 }}>
+            <ImageDiv>
               <Image src={AthleteMan} alt='athlete man' />
-            </div>
-            <div>
+            </ImageDiv>
+            <ImageDiv style={{ marginLeft: 24 }}>
               <Image src={AthleteWoman} alt='athlete woman' />
-            </div>
+            </ImageDiv>
           </Row>
           <Row>
             <Button

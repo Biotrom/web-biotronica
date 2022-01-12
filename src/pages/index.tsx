@@ -13,7 +13,7 @@ const Home: React.FC = () => {
       <Head>
         <title>Home</title>
       </Head>
-      <Header />
+      {/* <Header /> */}
       <Body />
       <Footer />
     </>

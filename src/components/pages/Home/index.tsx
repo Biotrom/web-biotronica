@@ -2,12 +2,12 @@
 import React from 'react'
 
 // Components
+import Welcome from './components/Welcome'
 import ArtificialInteligence from './components/ArtificialInteligence'
-import Depositions from './components/Depositions'
 import Lift from './components/Lift'
 import LiftLaunch from './components/LiftLaunch'
+import Depositions from './components/Depositions'
 import SocialNetworks from './components/SocialNetworks'
-import Welcome from './components/Welcome'
 
 const Body: React.FC = () => {
   return (
@@ -16,7 +16,6 @@ const Body: React.FC = () => {
       <ArtificialInteligence />
       <Lift />
       <LiftLaunch />
-      <Depositions />
       <SocialNetworks />
     </>
   )

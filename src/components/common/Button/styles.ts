@@ -30,6 +30,16 @@ export const Container = styled.button<ButtonProps>`
   border: none;
 
   cursor: pointer;
+
+  transition: .5s;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+
+  @media only screen and (max-width: 900px) {
+    cursor: none;
+  }
 `
 
 export const Title = styled.p<ButtonProps>`

@@ -29,8 +29,8 @@ const Header: React.FC = () => {
           <BiotronicaDark />
         </Logo>
         <Nav>
-          <Link isActive={home} href='#body2'>HOME</Link>
-          <Link isActive={about} href='#body3'>SOBRE</Link>
+          <Link isActive={home}>HOME</Link>
+          <Link isActive={about}>SOBRE</Link>
           <Link isActive={product}>PRODUTO</Link>
           <Link isActive={depositions}>DEPOIMENTOS</Link>
           <Link isActive={photos}>FOTOS</Link>

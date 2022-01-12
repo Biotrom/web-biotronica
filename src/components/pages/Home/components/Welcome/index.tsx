@@ -19,6 +19,7 @@ import {
   IconCircle,
   Row,
   RowContent,
+  RowImage,
   Title
 } from './styles'
 
@@ -39,16 +40,16 @@ const Welcome: React.FC = () => {
             </RowContent>
           </Column>
         </Row>
-        <Row>
+        <RowImage>
           <Image
             src={BiotronicaLight}
             alt='biotronica light'
             height={257}
             width={2078}
           />
-        </Row>
+        </RowImage>
         <Title>
-          Tecnologia de ponta <br />
+          Tecnologia de ponta
           a favor do seu desempenho.
         </Title>
         <Title>
@@ -65,14 +66,13 @@ const Welcome: React.FC = () => {
             <RowContent>
               <CircleItem
                 title='LANÇAMENTO'
-                marginLeft='13.5px'
                 marginBottom='56px'
                 color='#FFFFFF'
               />
               <CircleItem
                 title='22'
                 size='56px'
-                marginLeft='13.5px'
+                marginLeft='10px'
                 marginBottom='56px'
                 color='#F16136'
                 border='1px solid'
@@ -82,7 +82,7 @@ const Welcome: React.FC = () => {
               <CircleItem
                 title='22'
                 size='56px'
-                marginLeft='13.5px'
+                marginLeft='10px'
                 marginBottom='56px'
                 color='#FFFFFF'
                 border='1px solid'
@@ -92,7 +92,7 @@ const Welcome: React.FC = () => {
               <CircleItem
                 title='22'
                 size='56px'
-                marginLeft='13.5px'
+                marginLeft='10px'
                 marginBottom='56px'
                 color='#F16136'
                 border='1px solid'

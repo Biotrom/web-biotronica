@@ -6,8 +6,7 @@ import theme from '../../../styles/theme'
 
 export const Container = styled.header`
   width: 100%;
-  height: 9rem;
-  position: fixed;
+  height: 7rem;
 
   display: flex;
   align-items: center;
@@ -16,11 +15,15 @@ export const Container = styled.header`
   background-color: ${theme.colors.black};
   border-bottom: 1px solid;
   border-bottom-color: ${theme.colors.gray_200};
+
+  @media only screen and (max-width: 900px) {
+    height: fit-content;
+  }
 `
 
 export const Content = styled.div`
-  width: 100vw;
-  height: 9rem;
+  width: 100%;
+  height: 7rem;
 
   display: flex;
   align-items: center;
@@ -28,6 +31,10 @@ export const Content = styled.div`
 
   >button {
     margin-left: auto;
+  }
+
+  @media only screen and (max-width: 900px) {
+    height: fit-content;
   }
 `
 
@@ -45,7 +52,7 @@ export const Logo = styled.div`
 `
 
 export const Nav = styled.nav`
-  height: 9rem;
+  height: 7rem;
 
   display: flex;
   align-items: center;
@@ -62,13 +69,13 @@ export const Link = styled.a<LinkProps>`
   display: inline-block;
   position: relative;
   padding: 0 0.5rem;
-  height: 9rem;
-  line-height: 9rem;
+  height: 7rem;
+  line-height: 7rem;
 
   font-family: Barlow;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.375rem;
+  font-size: 1.275rem;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -111,8 +118,8 @@ export const TransparentContainer = styled.div`
 
   display: flex;
 
-  border-left: 1px solid;
-  border-left-color: ${theme.colors.gray_200};
+  /* border-left: 1px solid;
+  border-left-color: ${theme.colors.gray_200}; */
 
   margin-bottom: 3px;
 `

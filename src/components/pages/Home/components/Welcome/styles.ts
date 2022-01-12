@@ -13,10 +13,14 @@ export const Container = styled.div`
   flex-direction: column;
 
   background: linear-gradient(212.02deg, #000000 47.34%, #F16136 136.53%);
+
+  @media only screen and (max-width: 1024px) {
+    height: 100%;
+  }
 `
 
 export const Content = styled.div`
-  width: calc(100vw - 5rem);
+  width: calc(100% - 5rem);
   height: 935px;
 
   margin-top: 9rem;
@@ -25,6 +29,16 @@ export const Content = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+    height: 100%;
+
+    margin-top: 0rem;
+    padding: 12px;
+
+    justify-content: flex-start;
+  }
 `
 
 export const Row = styled.div`
@@ -34,6 +48,10 @@ export const Row = styled.div`
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 `
 
 export const Column = styled.div`
@@ -44,6 +62,11 @@ export const Column = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+    align-items: center;
+  }
 `
 
 export const RowContent = styled.div`
@@ -73,7 +96,7 @@ export const IconCircle = styled.div`
   width: 100px;
   height: 100px;
 
-  padding-left: 8px;
+  padding-left: 10px;
 
   display: flex;
   justify-content: center;
@@ -119,13 +142,34 @@ export const ColumnContent = styled.div`
 
     text-transform: uppercase;
   }
+  
+  @media only screen and (max-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`
+
+export const RowImage = styled.div`
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+
+  margin-left: 50px;
+
+  @media only screen and (max-width: 500px) {
+    margin-left: 20px;
+  }
 `
 
 export const Title = styled.div`
-  width: 100%;
+  width: 820px;
 
   margin-top: 36px;
-  padding-left: 230px;
+  /* padding-left: 230px; */
 
   display: flex;
   justify-content: flex-start;
@@ -138,4 +182,16 @@ export const Title = styled.div`
   font-size: 54px;
   line-height: 84px;
   text-transform: uppercase;
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+    padding-left: 0px;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 38px;
+    text-align: center;
+    line-height: 38px;
+  }
 `

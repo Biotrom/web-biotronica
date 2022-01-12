@@ -10,6 +10,10 @@ export const Container = styled.div`
   flex-direction: column;
 
   background: linear-gradient(212.02deg, rgba(0, 0, 0, 0.9) 47.34%, rgba(241, 97, 54, 0.9) 136.53%);
+  
+  @media only screen and (max-width: 1024px) {
+    height: 100%;
+  }
 `
 
 export const Content = styled.div`
@@ -20,6 +24,15 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+    height: 100%;
+     
+    padding: 12px;
+
+    flex-direction: column-reverse;
+  }
 `
 
 export const Column = styled.div`
@@ -30,6 +43,16 @@ export const Column = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+    height: fit-content;
+
+    margin-top: 30px;
+
+    justify-content: center;
+    flex-direction: column;
+  }
 `
 
 export const Row = styled.div`
@@ -40,6 +63,14 @@ export const Row = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
+
+  @media only screen and (max-width: 1024px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 30px;
+  }
 `
 
 export const Title = styled.h2`
@@ -48,6 +79,11 @@ export const Title = styled.h2`
   font-weight: 900;
   font-size: 58px;
   line-height: 64px;
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 38px;
+    line-height: 38px;
+  }
 `
 
 export const Subtitle = styled.p`
@@ -59,4 +95,9 @@ export const Subtitle = styled.p`
   font-weight: normal;
   font-size: 17px;
   line-height: 28px;
+
+  @media only screen and (max-width: 1024px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 `
