@@ -20,7 +20,7 @@ import {
 
 const LiftLaunch: React.FC = () => {
   return (
-    <Container>
+    <Container id='liftlaunch'>
       <Content>
         <Column>
           <LiftOrange />

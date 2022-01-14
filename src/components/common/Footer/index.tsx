@@ -5,14 +5,15 @@ import Image from 'next/image'
 // Components
 import Button from '../Button'
 
-// Utils
-import { footer } from '../../../utils/text/footer'
-
 // Assets
 import BiotronicaLight from '../../../assets/images/biotronica_light.png'
+import Instagram from '../../../assets/images/instagram.svg'
+import Twitter from '../../../assets/images/twitter.svg'
+import Youtube from '../../../assets/images/youtube.svg'
 
 // Styled
 import {
+  Column,
   Container,
   Content,
   ContentGrid,
@@ -35,8 +36,12 @@ const Footer: React.FC = () => {
                 src={BiotronicaLight}
                 alt='biotronica light'
               />
-              <p style={{ marginTop: 20 }}>{footer.first_column.text01}</p>
-              <p style={{ fontWeight: 700 }}>{footer.first_column.text02}</p>
+              <p style={{ marginTop: 20 }}>
+                Tecnologia de ponta a favor do seu desempenho.  
+              </p>
+              <p style={{ fontWeight: 700 }}>
+                Compromisso com a alta performance
+              </p>
               <Button
                 title='PRÉ-VENDA'
                 width='264px'
@@ -47,30 +52,29 @@ const Footer: React.FC = () => {
               />
             </ItemGrid>
             <ItemGrid>
-              <Title>
-                {footer.second_column.title}
-              </Title>
-              <p style={{ fontWeight: 700 }}>{footer.second_column.text01}</p>
-              <p style={{ fontWeight: 700 }}>{footer.second_column.text02}</p>
-              <p style={{ fontWeight: 700 }}>{footer.second_column.text03}</p>
-              <Phone>
-                {footer.second_column.phone}
-              </Phone>
+              <Title>Contatos</Title>
+              <p style={{ fontWeight: 700 }}>ONOVOLAB</p>
+              <p style={{ fontWeight: 700 }}>Rua Aquidabam, 1 - Centro,</p>
+              <p style={{ fontWeight: 700 }}>São Carlos - SP, 13560-120</p>
+              <Phone>16 93618-0739</Phone>
             </ItemGrid>
             <ItemGrid>
-              <Title>
-                {footer.third_column.title}
-              </Title>
+              <Title>Acesso rápido</Title>
               <ul>
-                <li>{footer.third_column.item01}</li>
-                <li style={{ color: theme.colors.orange }}>{footer.third_column.item02}</li>
-                <li>{footer.third_column.item03}</li>
-                <li>{footer.third_column.item04}</li>
-                <li>{footer.third_column.item05}</li>
+                <li>Sobre</li>
+                <li style={{ color: theme.colors.orange }}>LIFT</li>
+                <li>Depoimentos</li>
+                <li>Fotos</li>
+                <li>Pré-venda</li>
               </ul>
             </ItemGrid>
           </Grid>
         </ContentGrid>
+        <Column>
+          <Instagram />
+          <Twitter />
+          <Youtube />
+        </Column>
       </Content>
       <LastText>
         Biotronica | Todos os direitos reservados.

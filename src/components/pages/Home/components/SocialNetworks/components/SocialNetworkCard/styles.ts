@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 
 // Styled
-import theme from '../../../../../styles/theme'
+import theme from '../../../../../../../styles/theme'
 
 export const Card = styled.div`
   width: 380px;

@@ -27,9 +27,9 @@ import {
   Title
 } from './styles'
 
-const ArtificialInteligence: React.FC = () => {
+const ArtificialIntelligence: React.FC = () => {
   return (
-    <Container>
+    <Container id='artificialintelligence'>
       <Content>
         <ColumnIA>
           <IA>
@@ -88,4 +88,4 @@ const ArtificialInteligence: React.FC = () => {
   )
 }
 
-export default ArtificialInteligence
+export default ArtificialIntelligence

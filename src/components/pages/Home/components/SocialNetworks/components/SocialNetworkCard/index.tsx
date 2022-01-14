@@ -2,8 +2,8 @@
 import React from 'react'
 
 // Assets
-import Calendar from '../../../../../assets/images/calendar.svg'
-import Shape from '../../../../../assets/images/shape.svg'
+import Calendar from '../../../../../../../assets/images/calendar.svg'
+import Shape from '../../../../../../../assets/images/shape.svg'
 
 // Styled
 import {

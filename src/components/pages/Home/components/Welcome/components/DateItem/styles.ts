@@ -1,7 +1,7 @@
 // External libraries
 import styled from 'styled-components'
 
-interface ButtonProps {
+interface DateItem {
   size?: string
 
   paddingVertical?: string
@@ -19,7 +19,7 @@ interface ButtonProps {
   borderRadius?: string
 }
 
-export const Container = styled.div<ButtonProps>`
+export const Container = styled.div<DateItem>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +38,7 @@ export const Container = styled.div<ButtonProps>`
   border-color: ${props => props.borderColor};
 `
 
-export const Item = styled.p<ButtonProps>`
+export const Item = styled.p<DateItem>`
   color: ${props => props.color};
 
   padding-left: ${props => props.paddingHorizontal};

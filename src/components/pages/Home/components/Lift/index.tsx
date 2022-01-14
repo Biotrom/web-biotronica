@@ -6,6 +6,7 @@ import Button from '../../../../common/Button'
 
 // Assets
 import LiftImage from '../../../../../assets/images/lift.svg'
+import Weights from '../../../../../assets/images/weights2.png'
 
 // Styled
 import {
@@ -13,13 +14,15 @@ import {
   Container,
   Content,
   Row,
+  RowImage,
   Subtitle,
   Title
 } from './styles'
+import Image from 'next/image'
 
 const Lift: React.FC = () => {
   return (
-    <Container>
+    <Container id='lift'>
       <Content>
         <Column>
           <Row>
@@ -46,7 +49,12 @@ const Lift: React.FC = () => {
           </Row>
         </Column>
         <Column>
-          <LiftImage />
+          <Row style={{ justifyContent: 'center' }}>
+            <LiftImage />
+          </Row>
+          <RowImage>
+            <Image src={Weights} />
+          </RowImage>
         </Column>
       </Content>
     </Container>

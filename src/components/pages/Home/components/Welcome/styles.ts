@@ -6,7 +6,7 @@ import theme from '../../../../../styles/theme'
 
 export const Container = styled.div`
   width: 100%;
-  height: 935px;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,9 +21,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   width: calc(100% - 5rem);
-  height: 935px;
-
-  margin-top: 9rem;
+  height: 900px;
 
   display: flex;
   justify-content: flex-start;

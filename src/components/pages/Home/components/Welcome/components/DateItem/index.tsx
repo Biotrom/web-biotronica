@@ -7,7 +7,7 @@ import {
   Item
 } from './styles'
 
-interface CircleProps {
+interface DateItemProps {
   title?: string
   size?: string
 
@@ -26,7 +26,7 @@ interface CircleProps {
   borderRadius?: string
 }
 
-const Circle: React.FC<CircleProps> = ({
+const DateItem: React.FC<DateItemProps> = ({
   title,
   size,
   paddingVertical,
@@ -69,4 +69,4 @@ const Circle: React.FC<CircleProps> = ({
   )
 }
 
-export default Circle
+export default DateItem

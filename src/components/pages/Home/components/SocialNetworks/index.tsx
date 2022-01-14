@@ -2,9 +2,7 @@
 import React from 'react'
 
 // Assets
-import Calendar from '../../../../../assets/images/calendar.svg'
-import Shape from '../../../../../assets/images/shape.svg'
-import SocialNetworkCard from '../SocialNetworkCard'
+import SocialNetworkCard from './components/SocialNetworkCard'
 
 // Styled
 import {
@@ -16,7 +14,7 @@ import {
 
 const SocialNetworks: React.FC = () => {
   return (
-    <Container>
+    <Container id='socialnetworks'>
       <Content>
         <Title>
           Acompanhe-nos <br />

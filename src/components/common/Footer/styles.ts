@@ -22,12 +22,12 @@ export const Content = styled.div`
   width: 100%;
   height: 23rem;
 
+  margin-top: 267px;
+
   display: flex;
   align-items: center;
 
   background-color: ${theme.colors.orange};
-
-  margin-top: 267px;
 
   @media only screen and (max-width: 1024px) {
     margin-top: 0px;
@@ -39,8 +39,7 @@ export const ContentGrid = styled.div`
   width: 100%;
   height: 36rem;
 
-  margin-right: 9rem;
-  margin-bottom: 23rem;
+  margin-bottom: 20rem;
 
   display: flex;
   align-items: center;
@@ -117,6 +116,23 @@ export const Phone = styled.div`
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
+`
+
+export const Column = styled.div`
+  width: 150px;
+  height: 310px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  top: 0;
+  right: 0;
+
+  @media only screen and (max-width: 1024px) {
+    width: 50px;
+  }
 `
 
 export const LastText = styled.div`

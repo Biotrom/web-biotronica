@@ -73,6 +73,26 @@ export const Row = styled.div`
   }
 `
 
+export const RowImage = styled.div`
+  width: 100%;
+  height: fit-content;
+
+  margin-top: 15rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+
+  @media only screen and (max-width: 1024px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 0px;
+  }
+`
+
 export const Title = styled.h2`
   font-family: Barlow;
   font-style: normal;

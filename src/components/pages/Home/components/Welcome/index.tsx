@@ -4,7 +4,7 @@ import React from 'react'
 
 // Components
 import Button from '../../../../common/Button'
-import CircleItem from '../../../../common/CircleItem'
+import DateItem from './components/DateItem'
 
 // Assets
 import BiotronicaLight from '../../../../../assets/images/biotronica_light_darken.png'
@@ -25,7 +25,7 @@ import {
 
 const Welcome: React.FC = () => {
   return (
-    <Container>
+    <Container id='welcome'>
       <Content>
         <Row>
           <Column>
@@ -64,12 +64,12 @@ const Welcome: React.FC = () => {
         <Row>
           <Column>
             <RowContent>
-              <CircleItem
+              <DateItem
                 title='LANÇAMENTO'
                 marginBottom='56px'
                 color='#FFFFFF'
               />
-              <CircleItem
+              <DateItem
                 title='22'
                 size='56px'
                 marginLeft='10px'
@@ -79,7 +79,7 @@ const Welcome: React.FC = () => {
                 borderRadius='56px'
                 borderColor='#F16136'
               />
-              <CircleItem
+              <DateItem
                 title='22'
                 size='56px'
                 marginLeft='10px'
@@ -89,7 +89,7 @@ const Welcome: React.FC = () => {
                 borderRadius='56px'
                 borderColor='#FFFFFF'
               />
-              <CircleItem
+              <DateItem
                 title='22'
                 size='56px'
                 marginLeft='10px'

@@ -9,14 +9,14 @@ interface HeaderProps {
 }
 
 export const Container = styled.header<HeaderProps>`
-  width: 100%;
-  height: 7rem;
+  max-width: 1180px;
+  height: 100px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background-color: ${theme.colors.black};
+  background-color: ${theme.colors.white};
   border-bottom: 1px solid;
   border-bottom-color: ${theme.colors.gray_200};
 

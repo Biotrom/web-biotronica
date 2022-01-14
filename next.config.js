@@ -5,7 +5,7 @@ module.exports = withImages({
 
 // module.exports = {
 //   images: {
-//     disableStaticImages: true
+//     disableStaticImages: false
 //   }
 // }
 
