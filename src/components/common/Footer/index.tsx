@@ -1,15 +1,8 @@
 // External libraries
 import React from 'react'
-import Image from 'next/image'
 
 // Components
 import Button from '../Button'
-
-// Assets
-import BiotronicaLight from '../../../assets/images/biotronica_light.png'
-import Instagram from '../../../assets/images/instagram.svg'
-import Twitter from '../../../assets/images/twitter.svg'
-import Youtube from '../../../assets/images/youtube.svg'
 
 // Styled
 import {
@@ -32,10 +25,7 @@ const Footer: React.FC = () => {
         <ContentGrid>
           <Grid>
             <ItemGrid>
-              <Image
-                src={BiotronicaLight}
-                alt='biotronica light'
-              />
+              <img src='/images/biotronica_light.png' />
               <p style={{ marginTop: 20 }}>
                 Tecnologia de ponta a favor do seu desempenho.  
               </p>
@@ -71,9 +61,9 @@ const Footer: React.FC = () => {
           </Grid>
         </ContentGrid>
         <Column>
-          <Instagram />
-          <Twitter />
-          <Youtube />
+          <img src='/images/instagram.svg' />
+          <img src='/images/twitter.svg' />
+          <img src='/images/youtube.svg' />
         </Column>
       </Content>
       <LastText>

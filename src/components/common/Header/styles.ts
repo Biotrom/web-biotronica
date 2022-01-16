@@ -36,6 +36,7 @@ export const Container = styled.header<HeaderProps>`
 `
 
 export const Content = styled.div`
+  max-width: 2000px;
   width: 100%;
   height: 7rem;
 

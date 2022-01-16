@@ -4,10 +4,6 @@ import React from 'react'
 // Components
 import Button from '../../../../common/Button'
 
-// Assets
-import LiftImage from '../../../../../assets/images/lift.svg'
-import Weights from '../../../../../assets/images/weights2.png'
-
 // Styled
 import {
   Column,
@@ -18,7 +14,6 @@ import {
   Subtitle,
   Title
 } from './styles'
-import Image from 'next/image'
 
 const Lift: React.FC = () => {
   return (
@@ -50,10 +45,10 @@ const Lift: React.FC = () => {
         </Column>
         <Column>
           <Row style={{ justifyContent: 'center' }}>
-            <LiftImage />
+            <img src='/images/lift.svg' />
           </Row>
           <RowImage>
-            <Image src={Weights} />
+            <img src='/images/weights2.png' />
           </RowImage>
         </Column>
       </Content>

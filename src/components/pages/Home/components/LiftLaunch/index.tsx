@@ -1,11 +1,5 @@
 // External libraries
 import React from 'react'
-import Image from 'next/image'
-
-// Assets
-import LiftOrange from '../../../../../assets/images/lift_orange.svg'
-import Weights from '../../../../../assets/images/weights.png'
-import StrongArm from '../../../../../assets/images/strong_arm.png'
 
 // Styled
 import {
@@ -23,7 +17,7 @@ const LiftLaunch: React.FC = () => {
     <Container id='liftlaunch'>
       <Content>
         <Column>
-          <LiftOrange />
+          <img src='/images/lift_orange.svg' />
           <Title>
             Esteja informado sobre o
             lançamento do LIFT e demais produtos.
@@ -35,11 +29,11 @@ const LiftLaunch: React.FC = () => {
         </Column>
         <Column>
           <Row>
-            <Column style={{ marginLeft: 220, marginTop: 80 }}>
-              <Image src={StrongArm} height={400} width={190} />
+            <Column>
+              <img src='/images/weights.png' height={470} />
             </Column>
-            <ImageDiv>
-              <Image src={Weights} height={364} width={250} />
+            <ImageDiv style={{ marginLeft: 220, marginTop: 80 }}>
+              <img src='/images/strong_arm.png' />
             </ImageDiv>
           </Row>
         </Column>

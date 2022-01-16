@@ -10,7 +10,7 @@ export const Container = styled.div`
 
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: column;
 
   background: ${theme.colors.white};
@@ -22,7 +22,8 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
-  width: calc(100vw - 12rem);
+  max-width: 2000px;
+  width: calc(100vw - 18rem);
   height: 808px;
 
   display: flex;
@@ -92,6 +93,12 @@ export const Row = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
+  
+  div {
+    @media only screen and (max-width: 1024px) {
+      align-items: center;
+    }
+  }
 `
 
 export const ImageDiv = styled.div`
@@ -102,4 +109,14 @@ export const ImageDiv = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+
+  img {
+    max-height: 420px;
+    height: 100%;
+    background-color: darkred;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
 `

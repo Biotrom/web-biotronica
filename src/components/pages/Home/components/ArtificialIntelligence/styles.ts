@@ -21,6 +21,7 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
+  max-width: 2000px;
   width: calc(100vw - 10rem);
   height: 935px;
 
@@ -92,15 +93,16 @@ export const IA = styled.h1`
   text-transform: uppercase;
   color: #F16136;
 
-  transform: rotate(-90deg);
-
   @media only screen and (max-width: 1024px) {
     margin-bottom: 0px;
     
     font-size: 50px;
     line-height: 40px;
     text-align: start;
-    transform: rotate(0deg);
+  }
+
+  @media only screen and (min-width: 1024px) {
+    transform: rotate(-90deg);
   }
 `
 
@@ -114,9 +116,8 @@ export const IAOpacity = styled.h1`
   line-height: -20PX;
   text-transform: uppercase;
   color: #F16136;
-  opacity: 0.6;
-
-  transform: rotate(-90deg);
+  mix-blend-mode: normal;
+  /* opacity: 0.6; */
 
   @media only screen and (max-width: 1024px) {
     margin-bottom: 24px;
@@ -126,7 +127,11 @@ export const IAOpacity = styled.h1`
     text-align: start;
     /* writing-mode: horizontal-tb;
     transform: rotate(180deg); */
-    transform: rotate(0deg);
+  }
+
+  @media only screen and (min-width: 1024px) {
+    transform: rotate(-90deg);
+    opacity: 0.6;
   }
 `
 

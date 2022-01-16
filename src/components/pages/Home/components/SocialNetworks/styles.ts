@@ -9,7 +9,7 @@ export const Container = styled.div`
   height: 790px;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 
@@ -22,8 +22,11 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
+  max-width: 2000px;
   width: fit-content;
   height: 790px;
+
+  margin-bottom: 5rem;
 
   display: flex;
   justify-content: center;
@@ -33,7 +36,9 @@ export const Content = styled.div`
   @media only screen and (max-width: 1180px) {
     width: 100%;
     height: 100%;
+    
     padding: 12px;
+    margin-bottom: 1rem;
   }
 `
 

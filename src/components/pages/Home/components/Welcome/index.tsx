@@ -1,14 +1,9 @@
-// External libraries
-import Image from 'next/image'
+// External librarie
 import React from 'react'
 
 // Components
 import Button from '../../../../common/Button'
 import DateItem from './components/DateItem'
-
-// Assets
-import BiotronicaLight from '../../../../../assets/images/biotronica_light_darken.png'
-import IconTriangle from '../../../../../assets/images/icon_triangle.svg'
 
 // Styled
 import {
@@ -31,7 +26,8 @@ const Welcome: React.FC = () => {
           <Column>
             <RowContent>
               <IconCircle>
-                <IconTriangle />
+                <img src="/images/icon_triangle.svg" alt="" />
+                {/* <IconTriangle /> */}
               </IconCircle>
               <ColumnContent>
                 <p>PRECISÃO DO MOVIMENTO</p>
@@ -41,12 +37,13 @@ const Welcome: React.FC = () => {
           </Column>
         </Row>
         <RowImage>
-          <Image
+          <img src="/images/biotronica_light_darken.png" width='100%' alt="" />
+          {/* <Image
             src={BiotronicaLight}
             alt='biotronica light'
             height={257}
             width={2078}
-          />
+          /> */}
         </RowImage>
         <Title>
           Tecnologia de ponta

@@ -1,13 +1,8 @@
 // External libraries
-import Image from 'next/image'
 import React from 'react'
 
 // Components
 import Button from '../../../../common/Button'
-
-// Assets
-import AthleteMan from '../../../../../assets/images/athlete_man.png'
-import AthleteWoman from '../../../../../assets/images/athlete_woman.png'
 
 // Styled
 import {
@@ -66,10 +61,10 @@ const ArtificialIntelligence: React.FC = () => {
               </CardSubtitle>
             </Card>
             <ImageDiv>
-              <Image src={AthleteMan} alt='athlete man' />
+              <img src='/images/athlete_man.png' />
             </ImageDiv>
             <ImageDiv style={{ marginLeft: 24 }}>
-              <Image src={AthleteWoman} alt='athlete woman' />
+              <img src='/images/athlete_woman.png' />
             </ImageDiv>
           </Row>
           <Row>

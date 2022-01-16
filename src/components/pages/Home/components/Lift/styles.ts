@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   height: 808px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +18,8 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
-  width: calc(100vw - 24rem);
+  max-width: 2000px;
+  width: calc(100vw - 18rem);
   height: 808px;
 
   display: flex;
@@ -74,8 +76,11 @@ export const Row = styled.div`
 `
 
 export const RowImage = styled.div`
+  max-width: 580px;
   width: 100%;
   height: fit-content;
+
+  background-color: goldenrod;
 
   margin-top: 15rem;
 
@@ -83,6 +88,11 @@ export const RowImage = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
+
+  img {
+    max-width: 580px;
+    width: 100%;
+  }
 
   @media only screen and (max-width: 1024px) {
     justify-content: center;

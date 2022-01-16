@@ -9,7 +9,7 @@ import Document, {
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
-import instagram from '../assets/images/instagram.png'
+// import instagram from '../assets/images/instagram.png'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx): Promise<DocumentInitialProps> {

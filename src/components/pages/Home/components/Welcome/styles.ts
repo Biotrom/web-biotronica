@@ -20,6 +20,7 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
+  max-width: 2000px;
   width: calc(100% - 5rem);
   height: 900px;
 

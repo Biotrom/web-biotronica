@@ -1,9 +1,11 @@
 // External libraries
-import React, { useEffect } from 'react'
+import React from 'react'
 import Head from 'next/head'
 
 // Components
 import FloatingHeader from '../../components/common/FloatingHeader'
+import Welcome from '../../components/pages/Photos/components/Welcome'
+import PhotoAlbum from '../../components/pages/Photos/components/PhotoAlbum'
 import Footer from '../../components/common/Footer'
 
 const Home: React.FC = () => {
@@ -13,6 +15,8 @@ const Home: React.FC = () => {
         <title>Fotos</title>
       </Head>
       <FloatingHeader />
+      <Welcome />
+      <PhotoAlbum />
       <Footer />
     </>
   )
