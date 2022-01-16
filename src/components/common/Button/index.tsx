@@ -9,6 +9,7 @@ import {
 
 interface ButtonProps {
   title: string
+  onClick?: () => void
 
   width?: string
   height?: string
@@ -27,6 +28,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({
   title,
+  onClick,
   width,
   height,
   paddingVertical,
@@ -47,6 +49,7 @@ const Button: React.FC<ButtonProps> = ({
       marignLeft={marignLeft}
       marginRight={marginRight}
       backgroundColor={backgroundColor}
+      onClick={onClick}
     >
       <Title
         paddingVertical={paddingVertical}
