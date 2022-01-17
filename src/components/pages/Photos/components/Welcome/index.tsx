@@ -1,4 +1,5 @@
 // External libraries
+import { useRouter } from 'next/router'
 import React from 'react'
 
 // Components
@@ -12,6 +13,8 @@ import {
 } from './styles'
 
 const Welcome: React.FC = () => {
+  const router = useRouter()
+
   return (
     <Container>
       <Content>
@@ -26,6 +29,7 @@ const Welcome: React.FC = () => {
             marginTop='2rem'
             color='white'
             backgroundColor='#F16136'
+            onClick={() => router.push('/wait')}
           />
         </Title>
       </Content>

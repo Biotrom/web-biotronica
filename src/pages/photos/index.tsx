@@ -8,7 +8,7 @@ import Welcome from '../../components/pages/Photos/components/Welcome'
 import PhotoAlbum from '../../components/pages/Photos/components/PhotoAlbum'
 import Footer from '../../components/common/Footer'
 
-const Home: React.FC = () => {
+const Photos: React.FC = () => {
   return (
     <>
       <Head>
@@ -22,4 +22,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
+export default Photos

@@ -1,4 +1,5 @@
 // External libraries
+import { useRouter } from 'next/router'
 import React from 'react'
 
 // Components
@@ -16,6 +17,8 @@ import {
 } from './styles'
 
 const Lift: React.FC = () => {
+  const router = useRouter()
+
   return (
     <Container id='lift'>
       <Content>
@@ -40,6 +43,7 @@ const Lift: React.FC = () => {
               height='58px'
               color='white'
               backgroundColor='#F16136'
+              onClick={() => router.push('/wait')}
             />
           </Row>
         </Column>

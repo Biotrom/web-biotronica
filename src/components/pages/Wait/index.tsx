@@ -7,20 +7,19 @@ import Button from '../../common/Button'
 import {
   Container,
   Content,
-  NotFound404,
   Row,
   RowIcons,
   Title
 } from './styles'
 
-const NotFound: React.FC = () => {
+const Wait: React.FC = () => {
   const router = useRouter()
 
   return (
     <Container>
       <Content>
         <Row>
-          <Title>Página não encontrada</Title>
+          <Title>Em breve...</Title>
         </Row>
         <Row>
           <Button
@@ -37,10 +36,9 @@ const NotFound: React.FC = () => {
           <img src='/images/twitter.svg' />
           <img src='/images/youtube.svg' />
         </RowIcons>
-        <NotFound404>404</NotFound404>
       </Content>
     </Container>
   )
 }
 
-export default NotFound
+export default Wait

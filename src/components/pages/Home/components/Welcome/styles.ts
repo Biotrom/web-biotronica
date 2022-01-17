@@ -141,7 +141,7 @@ export const ColumnContent = styled.div`
 
     text-transform: uppercase;
   }
-  
+
   @media only screen and (max-width: 1024px) {
     display: flex;
     justify-content: center;

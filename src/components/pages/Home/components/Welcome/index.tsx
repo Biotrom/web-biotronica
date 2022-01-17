@@ -1,4 +1,5 @@
 // External librarie
+import { useRouter } from 'next/router'
 import React from 'react'
 
 // Components
@@ -19,6 +20,8 @@ import {
 } from './styles'
 
 const Welcome: React.FC = () => {
+  const router = useRouter()
+
   return (
     <Container id='welcome'>
       <Content>
@@ -56,6 +59,7 @@ const Welcome: React.FC = () => {
             height='58px'
             color='white'
             backgroundColor='#F16136'
+            onClick={() => router.push('/wait')}
           />
         </Title>
         <Row>
@@ -77,7 +81,7 @@ const Welcome: React.FC = () => {
                 borderColor='#F16136'
               />
               <DateItem
-                title='22'
+                title='02'
                 size='56px'
                 marginLeft='10px'
                 marginBottom='56px'

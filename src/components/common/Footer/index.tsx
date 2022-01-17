@@ -1,5 +1,6 @@
 // External libraries
 import React from 'react'
+import { useRouter } from 'next/router'
 
 // Components
 import Button from '../Button'
@@ -19,6 +20,8 @@ import {
 import theme from '../../../styles/theme'
 
 const Footer: React.FC = () => {
+  const router = useRouter()
+
   return (
     <Container>
       <Content>
@@ -27,7 +30,7 @@ const Footer: React.FC = () => {
             <ItemGrid>
               <img src='/images/biotronica_light.png' />
               <p style={{ marginTop: 20 }}>
-                Tecnologia de ponta a favor do seu desempenho.  
+                Tecnologia de ponta a favor do seu desempenho.
               </p>
               <p style={{ fontWeight: 700 }}>
                 Compromisso com a alta performance
@@ -39,6 +42,7 @@ const Footer: React.FC = () => {
                 marginTop='50px'
                 color={theme.colors.white}
                 backgroundColor={theme.colors.orange}
+                onClick={() => router.push('/wait')}
               />
             </ItemGrid>
             <ItemGrid>

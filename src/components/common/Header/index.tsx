@@ -1,8 +1,6 @@
 // External libraries
-import React, { useEffect, useState } from 'react'
-
-// Assets
-import BiotronicaDark from '../../../assets/images/biotronica_dark.svg'
+import { useRouter } from 'next/router'
+import React, { useState } from 'react'
 
 // Styled
 import {
@@ -16,13 +14,15 @@ import {
 } from './styles'
 
 const Header: React.FC = () => {
-  const [home, setHome] = useState(true)
+  const router = useRouter()
+
+  const [home, setHome] = useState(false)
   const [about, setAbout] = useState(false)
   const [product, setProduct] = useState(false)
   const [depositions, setDepositions] = useState(false)
   const [photos, setPhotos] = useState(false)
   const [contact, setContact] = useState(false)
-  
+
   const [active, setActive] = useState(false)
 
   const handleActiveHome = () => {
@@ -87,45 +87,45 @@ const Header: React.FC = () => {
     <Container isActive={active}>
       <Content>
         <Logo>
-          <BiotronicaDark />
+          <img src='/images/biotronica_dark.svg' />
         </Logo>
         <Nav isActive={active}>
-          <Link 
-            isActive={home} 
+          <Link
+            isActive={home}
             onClick={handleActiveHome}
             href='#welcome'
           >
             HOME
           </Link>
-          <Link 
+          <Link
             isActive={about}
             onClick={handleActiveAbout}
             href='#artificialintelligence'
           >
             SOBRE
           </Link>
-          <Link 
-            isActive={product} 
+          <Link
+            isActive={product}
             onClick={handleActiveProducts}
             href='#lift'
           >
             PRODUTO
           </Link>
-          {/* <Link 
-            isActive={depositions} 
+          {/* <Link
+            isActive={depositions}
             onClick={handleActiveDepositions}
             href='#depositions'
           >
             DEPOIMENTOS
           </Link> */}
-          <Link 
-            isActive={photos} 
-            href='https://biotronica.tech/photos'
+          <Link
+            isActive={photos}
+            onClick={() => router.push('photos')}
           >
             FOTOS
           </Link>
-          <Link 
-            isActive={contact} 
+          <Link
+            isActive={contact}
             onClick={handleActiveContact}
             href='#socialnetworks'
           >

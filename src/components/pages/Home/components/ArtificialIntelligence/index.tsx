@@ -1,4 +1,5 @@
 // External libraries
+import { useRouter } from 'next/router'
 import React from 'react'
 
 // Components
@@ -23,6 +24,8 @@ import {
 } from './styles'
 
 const ArtificialIntelligence: React.FC = () => {
+  const router = useRouter()
+
   return (
     <Container id='artificialintelligence'>
       <Content>
@@ -75,6 +78,7 @@ const ArtificialIntelligence: React.FC = () => {
               marginTop='20px'
               color='white'
               backgroundColor='#F16136'
+              onClick={() => router.push('/wait')}
             />
           </Row>
         </Column>
