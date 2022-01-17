@@ -14,7 +14,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   background: ${theme.colors.white};
-  
+
   @media only screen and (max-width: 1024px) {
     height: 100%;
   }
@@ -95,7 +95,7 @@ export const IA = styled.h1`
 
   @media only screen and (max-width: 1024px) {
     margin-bottom: 0px;
-    
+
     font-size: 50px;
     line-height: 40px;
     text-align: start;
@@ -137,7 +137,7 @@ export const IAOpacity = styled.h1`
 
 export const Title = styled.div`
   padding-left: 110px;
-  
+
   font-family: Barlow;
   font-style: normal;
   font-weight: 900;
@@ -172,7 +172,8 @@ export const Subtitle = styled.div`
 `
 
 export const Row = styled.div`
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
 
   display: flex;
   align-items: flex-end;
@@ -189,9 +190,11 @@ export const Row = styled.div`
 `
 
 export const Card = styled.div`
-  width: 380px;
-  max-width: 500px;
-  height: 198px;
+  width: 100%;
+  max-width: 380px;
+  height: 100%;
+  max-height: 300px;
+  min-height: 198px;
 
   display: flex;
   align-items: flex-start;
@@ -207,15 +210,20 @@ export const Card = styled.div`
 
   @media only screen and (max-width: 1024px) {
     width: 100%;
+    max-width: 500px;
     height: fit-content;
 
     margin-top: 12px;
     margin-right: 0px;
   }
+
+  @media only screen and (max-width: 1220px) {
+    margin-right: 0px;
+  }
 `
 
 export const ImageDiv = styled.div`
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1220px) {
     display: none;
   }
 `
