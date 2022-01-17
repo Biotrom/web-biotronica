@@ -19,7 +19,6 @@ const Header: React.FC = () => {
   const [home, setHome] = useState(false)
   const [about, setAbout] = useState(false)
   const [product, setProduct] = useState(false)
-  const [depositions, setDepositions] = useState(false)
   const [photos, setPhotos] = useState(false)
   const [contact, setContact] = useState(false)
 
@@ -29,21 +28,16 @@ const Header: React.FC = () => {
     setHome(true)
     setAbout(false)
     setProduct(false)
-    setDepositions(false)
     setPhotos(false)
     setContact(false)
 
     setActive(false)
-
-    if (active) scroll(0, 64)
-    else scroll(0, 112)
   }
 
   const handleActiveAbout = () => {
     setHome(false)
     setAbout(true)
     setProduct(false)
-    setDepositions(false)
     setPhotos(false)
     setContact(false)
 
@@ -54,18 +48,6 @@ const Header: React.FC = () => {
     setHome(false)
     setAbout(false)
     setProduct(true)
-    setDepositions(false)
-    setPhotos(false)
-    setContact(false)
-
-    setActive(false)
-  }
-
-  const handleActiveDepositions = () => {
-    setHome(false)
-    setAbout(false)
-    setProduct(false)
-    setDepositions(true)
     setPhotos(false)
     setContact(false)
 
@@ -76,7 +58,6 @@ const Header: React.FC = () => {
     setHome(false)
     setAbout(false)
     setProduct(false)
-    setDepositions(false)
     setPhotos(false)
     setContact(true)
 
@@ -111,13 +92,6 @@ const Header: React.FC = () => {
           >
             PRODUTO
           </Link>
-          {/* <Link
-            isActive={depositions}
-            onClick={handleActiveDepositions}
-            href='#depositions'
-          >
-            DEPOIMENTOS
-          </Link> */}
           <Link
             isActive={photos}
             onClick={() => router.push('photos')}
