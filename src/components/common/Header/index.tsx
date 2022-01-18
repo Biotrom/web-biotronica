@@ -106,7 +106,11 @@ const Header: React.FC = () => {
             CONTATO
           </Link>
         </Nav>
-        <TransparentContainer />
+        <TransparentContainer>
+          <img src='/images/instagram.svg' />
+          <img src='/images/twitter.svg' />
+          <img src='/images/youtube.svg' />
+        </TransparentContainer>
         <ButtonMenu onClick={() => setActive(!active)}>
           &#9776;
         </ButtonMenu>

@@ -6,7 +6,7 @@ import theme from '../../../../../styles/theme'
 
 export const Container = styled.div`
   width: 100%;
-  height: 900px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   max-width: 2000px;
   width: calc(100% - 5rem);
-  height: 900px;
+  height: 100%;
 
   display: flex;
   justify-content: flex-start;
@@ -49,13 +49,13 @@ export const Row = styled.div`
   flex-direction: row;
 
   @media only screen and (max-width: 1024px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 `
 
 export const Column = styled.div`
-  width: 28rem;
-  height: fit-content;
+  width: 100%;
+  height: 100%;
 
   display: flex;
   justify-content: center;
@@ -63,7 +63,6 @@ export const Column = styled.div`
   flex-direction: column;
 
   @media only screen and (max-width: 1024px) {
-    width: 100%;
     align-items: center;
   }
 `
@@ -72,8 +71,7 @@ export const RowContent = styled.div`
   width: fit-content;
   height: fit-content;
 
-  margin-top: 70px;
-  margin-bottom: 20px;
+  margin-top: 24px;
 
   display: flex;
   justify-content: center;
@@ -165,7 +163,8 @@ export const RowImage = styled.div`
 `
 
 export const Title = styled.div`
-  width: 820px;
+  max-width: 820px;
+  width: 100%;
 
   margin-top: 36px;
   /* padding-left: 230px; */

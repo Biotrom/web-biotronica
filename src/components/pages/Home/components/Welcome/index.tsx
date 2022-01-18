@@ -15,7 +15,6 @@ import {
   IconCircle,
   Row,
   RowContent,
-  RowImage,
   Title
 } from './styles'
 
@@ -26,6 +25,9 @@ const Welcome: React.FC = () => {
     <Container id='welcome'>
       <Content>
         <Row>
+          <Column style={{ alignItems: 'center', justifyContent: 'center' }}>
+            <img src='/images/weights.png' height={500} />
+          </Column>
           <Column>
             <RowContent>
               <IconCircle>
@@ -37,33 +39,20 @@ const Welcome: React.FC = () => {
                 <h4>CONHEÇA</h4>
               </ColumnContent>
             </RowContent>
-          </Column>
-        </Row>
-        <RowImage>
-          <img src="/images/biotronica_light_darken.png" width='100%' alt="" />
-          {/* <Image
-            src={BiotronicaLight}
-            alt='biotronica light'
-            height={257}
-            width={2078}
-          /> */}
-        </RowImage>
-        <Title>
-          Tecnologia de ponta
-          a favor do seu desempenho.
-        </Title>
-        <Title>
-          <Button
-            title='PRÉ-VENDA'
-            width='294px'
-            height='58px'
-            color='white'
-            backgroundColor='#F16136'
-            onClick={() => router.push('/wait')}
-          />
-        </Title>
-        <Row>
-          <Column>
+            <Title>
+              Tecnologia de ponta
+              a favor do seu desempenho.
+            </Title>
+            <Title>
+              <Button
+                title='PRÉ-VENDA'
+                width='294px'
+                height='58px'
+                color='white'
+                backgroundColor='#F16136'
+                onClick={() => router.push('/wait')}
+              />
+            </Title>
             <RowContent>
               <DateItem
                 title='LANÇAMENTO'

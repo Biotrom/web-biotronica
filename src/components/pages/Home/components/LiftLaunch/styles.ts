@@ -6,7 +6,7 @@ import theme from '../../../../../styles/theme'
 
 export const Container = styled.div`
   width: 100%;
-  height: 808px;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   max-width: 2000px;
   width: calc(100vw - 18rem);
-  height: 808px;
+  height: 100%;
 
   display: flex;
   justify-content: center;
@@ -93,7 +93,7 @@ export const Row = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-  
+
   div {
     @media only screen and (max-width: 1024px) {
       align-items: center;

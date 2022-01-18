@@ -9,7 +9,6 @@ import ArtificialIntelligence from '../components/pages/Home/components/Artifici
 import Lift from '../components/pages/Home/components/Lift'
 import LiftLaunch from '../components/pages/Home/components/LiftLaunch'
 import Depositions from '../components/pages/Home/components/Depositions'
-import SocialNetworks from '../components/pages/Home/components/SocialNetworks'
 import Footer from '../components/common/Footer'
 
 const Home: React.FC = () => {
@@ -23,7 +22,6 @@ const Home: React.FC = () => {
       <ArtificialIntelligence />
       <Lift />
       <LiftLaunch />
-      <SocialNetworks />
       <Footer />
     </>
   )

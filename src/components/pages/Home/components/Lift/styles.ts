@@ -3,15 +3,15 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  height: 808px;
-  
+  height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
   background: linear-gradient(212.02deg, rgba(0, 0, 0, 0.9) 47.34%, rgba(241, 97, 54, 0.9) 136.53%);
-  
+
   @media only screen and (max-width: 1024px) {
     height: 100%;
   }
@@ -20,7 +20,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   max-width: 2000px;
   width: calc(100vw - 18rem);
-  height: 808px;
+  height: 100%;
 
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@ export const Content = styled.div`
   @media only screen and (max-width: 1024px) {
     width: 100%;
     height: 100%;
-     
+
     padding: 12px;
 
     flex-direction: column-reverse;
@@ -82,7 +82,7 @@ export const RowImage = styled.div`
 
   background-color: goldenrod;
 
-  margin-top: 15rem;
+  margin-top: 8rem;
 
   display: flex;
   justify-content: flex-start;

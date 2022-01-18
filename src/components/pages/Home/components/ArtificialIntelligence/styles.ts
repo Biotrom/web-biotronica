@@ -6,7 +6,7 @@ import theme from '../../../../../styles/theme'
 
 export const Container = styled.div`
   width: 100%;
-  height: 935px;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   max-width: 2000px;
   width: calc(100vw - 10rem);
-  height: 935px;
+  height: 100%;
 
   display: flex;
   justify-content: center;
@@ -88,8 +88,8 @@ export const IA = styled.h1`
   font-family: Barlow;
   font-style: normal;
   font-weight: 900;
-  font-size: 150px;
-  line-height: -20px;
+  font-size: 100px;
+  line-height: 100px;
   text-transform: uppercase;
   color: #F16136;
 
@@ -112,8 +112,8 @@ export const IAOpacity = styled.h1`
   font-family: Barlow;
   font-style: normal;
   font-weight: 900;
-  font-size: 150px;
-  line-height: -20PX;
+  font-size: 100px;
+  line-height: 0px;
   text-transform: uppercase;
   color: #F16136;
   mix-blend-mode: normal;

@@ -10,7 +10,7 @@ interface HeaderProps {
 
 export const Container = styled.header<HeaderProps>`
   width: 100%;
-  height: 7rem;
+  height: 6rem;
 
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ export const Container = styled.header<HeaderProps>`
 export const Content = styled.div`
   max-width: 2000px;
   width: 100%;
-  height: 7rem;
+  height: 6rem;
 
   display: flex;
   align-items: center;
@@ -73,7 +73,7 @@ export const Logo = styled.div`
 `
 
 export const Nav = styled.nav<HeaderProps>`
-  height: 7rem;
+  height: 6rem;
 
   display: flex;
   align-items: center;
@@ -99,8 +99,8 @@ export const Link = styled.a<LinkProps>`
   display: inline-block;
   position: relative;
   padding: 0 0.5rem;
-  height: 7rem;
-  line-height: 7rem;
+  height: 6rem;
+  line-height: 6rem;
 
   font-family: Barlow;
   font-style: normal;
@@ -110,10 +110,11 @@ export const Link = styled.a<LinkProps>`
   text-transform: uppercase;
   text-decoration: none;
 
-  color: ${(props) => props.isActive
+  /* color: ${(props) => props.isActive
     ? theme.colors.orange
     : theme.colors.white
-  };
+  }; */
+  color: ${theme.colors.white};
 
   & + a {
     margin-left: 1.25rem;
@@ -125,7 +126,7 @@ export const Link = styled.a<LinkProps>`
     color: ${theme.colors.orange};
   }
 
-  ${(props) => props.isActive &&
+  /* ${(props) => props.isActive &&
     '::after { ' +
       'content: "";' +
       'height: 5px;' +
@@ -136,7 +137,7 @@ export const Link = styled.a<LinkProps>`
       'left: 0;' +
       'background: #F16136;' +
     '}'
-  }
+  } */
 
   cursor: pointer;
 
@@ -148,13 +149,13 @@ export const Link = styled.a<LinkProps>`
       margin-left: 0rem;
     }
 
-    ${(props) => props.isActive &&
+    /* ${(props) => props.isActive &&
       '::after { ' +
         'content: "";' +
         'height: 0px;' +
         'position: static;' +
       '}'
-    }
+    } */
 
     cursor: none;
   }
@@ -162,10 +163,11 @@ export const Link = styled.a<LinkProps>`
 
 export const TransparentContainer = styled.div`
   width: 17.5rem;
-  height: 100%;
+  height: 25px;
   background-color: transparent;
 
   display: flex;
+  justify-content: space-evenly;
 
   /* border-left: 1px solid;
   border-left-color: ${theme.colors.gray_200}; */
@@ -182,7 +184,7 @@ export const ButtonMenu = styled.button`
   height: 64px;
 
   padding-bottom: 3px;
-  
+
   display: none;
   align-items: center;
   justify-content: center;
