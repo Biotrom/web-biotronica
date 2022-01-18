@@ -7,7 +7,7 @@ import theme from '../../../styles/theme'
 export const Container = styled.header`
   width: 100%;
   height: 45.5rem;
-  
+
   display: flex;
   flex-direction: column;
 
@@ -32,6 +32,7 @@ export const Content = styled.div`
   @media only screen and (max-width: 1024px) {
     margin-top: 0px;
     height: 100%;
+  background-color: ${theme.colors.black};
   }
 `
 

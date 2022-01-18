@@ -7,6 +7,7 @@ import theme from '../../../../../styles/theme'
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,11 +22,11 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   max-width: 2000px;
-  width: calc(100% - 5rem);
+  width: calc(100% - 10rem);
   height: 100%;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 

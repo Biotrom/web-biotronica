@@ -101,7 +101,7 @@ const Header: React.FC = () => {
           <Link
             isActive={contact}
             onClick={handleActiveContact}
-            href='#socialnetworks'
+            href='#contact'
           >
             CONTATO
           </Link>

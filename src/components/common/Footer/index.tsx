@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
   const router = useRouter()
 
   return (
-    <Container>
+    <Container id='contact'>
       <Content>
         <ContentGrid>
           <Grid>
