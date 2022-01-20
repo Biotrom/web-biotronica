@@ -24,7 +24,6 @@ const Welcome: React.FC = () => {
   return (
     <Container id='welcome'>
       <Content>
-        <Row>
           <Column style={{ alignItems: 'center', justifyContent: 'center' }}>
             <img src='/images/weights.png' height={500} />
           </Column>
@@ -56,14 +55,16 @@ const Welcome: React.FC = () => {
             <RowContent>
               <DateItem
                 title='LANÇAMENTO'
-                marginBottom='56px'
+                marginBottom='16px'
+                marginTop='32px'
                 color='#FFFFFF'
               />
               <DateItem
                 title='22'
                 size='56px'
                 marginLeft='10px'
-                marginBottom='56px'
+                marginBottom='16px'
+                marginTop='32px'
                 color='#F16136'
                 border='1px solid'
                 borderRadius='56px'
@@ -73,7 +74,8 @@ const Welcome: React.FC = () => {
                 title='02'
                 size='56px'
                 marginLeft='10px'
-                marginBottom='56px'
+                marginBottom='16px'
+                marginTop='32px'
                 color='#FFFFFF'
                 border='1px solid'
                 borderRadius='56px'
@@ -83,7 +85,8 @@ const Welcome: React.FC = () => {
                 title='22'
                 size='56px'
                 marginLeft='10px'
-                marginBottom='56px'
+                marginBottom='16px'
+                marginTop='32px'
                 color='#F16136'
                 border='1px solid'
                 borderRadius='56px'
@@ -91,7 +94,6 @@ const Welcome: React.FC = () => {
               />
             </RowContent>
           </Column>
-        </Row>
       </Content>
     </Container>
   )

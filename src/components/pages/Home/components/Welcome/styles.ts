@@ -28,7 +28,7 @@ export const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 
   @media only screen and (max-width: 1024px) {
     width: 100%;
@@ -38,6 +38,7 @@ export const Content = styled.div`
     padding: 12px;
 
     justify-content: flex-start;
+    flex-direction: column-reverse;
   }
 `
 
@@ -56,10 +57,10 @@ export const Row = styled.div`
 
 export const Column = styled.div`
   width: 100%;
-  height: 100%;
+  height: fit-content;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   flex-direction: column;
 
@@ -71,8 +72,6 @@ export const Column = styled.div`
 export const RowContent = styled.div`
   width: fit-content;
   height: fit-content;
-
-  margin-top: 24px;
 
   display: flex;
   justify-content: center;
@@ -108,7 +107,7 @@ export const ColumnContent = styled.div`
   width: fit-content;
   height: fit-content;
 
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 
   display: flex;
   justify-content: center;
@@ -116,7 +115,7 @@ export const ColumnContent = styled.div`
   flex-direction: column;
 
   p {
-    margin-top: 11px;
+    /* margin-top: 11px; */
     margin-left: 20px;
 
     font-family: Barlow;
@@ -129,7 +128,7 @@ export const ColumnContent = styled.div`
   }
 
   h4 {
-    margin-top: 5px;
+    /* margin-top: 5px; */
     margin-left: 20px;
 
     font-family: Barlow;
@@ -145,21 +144,6 @@ export const ColumnContent = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-`
-
-export const RowImage = styled.div`
-  width: 100%;
-  height: fit-content;
-
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-
-  margin-left: 50px;
-
-  @media only screen and (max-width: 500px) {
-    margin-left: 20px;
   }
 `
 
@@ -179,7 +163,7 @@ export const Title = styled.div`
   font-style: italic;
   font-weight: 600;
   font-size: 54px;
-  line-height: 84px;
+  line-height: 74px;
   text-transform: uppercase;
 
   @media only screen and (max-width: 1024px) {
